@@ -32,7 +32,8 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/bin/accd8flowdir
-    - if not exist %LIBRARY_BIN%\\accd8flowdir.exe exit 1  # [win]
+    - if not exist %LIBRARY_BIN%\\accD8FlowDir.exe exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\\accD8FlowDir.lib exit 1  # [win]
 
 about:
   home: http://hydrology.usu.edu/taudem

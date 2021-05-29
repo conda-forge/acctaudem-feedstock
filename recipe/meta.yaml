@@ -10,26 +10,30 @@ source:
   sha256: b35bac0ea056991aefe93a4330a8574e171f7d562c7e6e909f95335b01758e6b
 
 build:
-  number: 3
-  skip: true  # [win or osx]
+  number: 2
+  skip: true  # [osx]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ compiler('fortran') }}
-    - make
-    - cmake
+    - make  # [linux]
+    - cmake  # [linux]
   host:
     - libgdal
-    - mpich
+    - mpich  # [linux]
+    - msmpi  # [win]
   run:
     - libgdal
-    - mpich
+    - mpich  # [linux]
+    - msmpi  # [win]
 
 test:
   commands:
     - test -f $PREFIX/bin/accd8flowdir
+    - if not exist %LIBRARY_BIN%\\accD8FlowDir.exe exit 1  # [win]
+    - if not exist %LIBRARY_LIB%\\accD8FlowDir.lib exit 1  # [win]
 
 about:
   home: http://hydrology.usu.edu/taudem

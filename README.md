@@ -1,11 +1,11 @@
-About acctaudem
-===============
+About acctaudem-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/acctaudem-feedstock/blob/main/LICENSE.txt)
 
 Home: http://hydrology.usu.edu/taudem
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/acctaudem-feedstock/blob/main/LICENSE.txt)
 
 Summary: Accelerated Terrain Analysis Using Digital Elevation Models (TauDEM)
 
@@ -37,13 +37,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10829&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/acctaudem-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=10829&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/acctaudem-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
